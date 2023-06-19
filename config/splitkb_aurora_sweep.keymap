@@ -100,10 +100,10 @@
 
             hands_down_layer {
         bindings = <
-        &kp X &kp W &kp M &kp G &kp J                       &kp # &kp .  &kp /    &kp "   &kp '
-        &kp S &kp C &kp N &kp T &kp K                       &kp , &kp A &kp E &kp I &kp H
-        &kp B &kp P &kp L &kp D &kp V                       &kp - &kp U &kp O &kp Y &kp F
-                          &to 0 &kp R                       &kp SPC &mo 2
+        &kp X &kp W &kp M &kp G &kp J                       &kp HASH &kp DOT &kp FSLH &kp DQT &kp DQT
+        &kp S &kp C &kp N &kp T &kp K                       &kp CMMA &kp A &kp E &kp I &kp H
+        &kp B &kp P &kp L &kp D &kp V                       &kp MINUS &kp U &kp O &kp Y &kp F
+                          &to 0 &kp R                       &kp SPC &kp RET
         >;
         };
     };
