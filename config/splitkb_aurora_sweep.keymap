@@ -26,7 +26,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "TAP_OR_SHIFTED";
             #binding-cells = <0>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
             mods = <(MOD_LSFT)>;
         };
     };
