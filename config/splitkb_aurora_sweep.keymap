@@ -18,9 +18,9 @@
         name: name { \
             compatible = "zmk,behavior-mod-morph";
             label = name; \
-            #binding-cells = <0>;
-            bindings = <&kp unshifted>, <&kp shifted>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            #binding-cells = <0>; \
+            bindings = <&kp unshifted>, <&kp shifted>; \
+            mods = <(MOD_LSFT|MOD_RSFT)>; \
         };
 
 
