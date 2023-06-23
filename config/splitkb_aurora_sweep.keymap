@@ -16,7 +16,7 @@
 
 #define SHIFTED_BEHAVIOR(name, unshifted, shifted) \
         name: name { \
-            compatible = "zmk,behavior-mod-morph";
+            compatible = "zmk,behavior-mod-morph"; \
             label = name; \
             #binding-cells = <0>; \
             bindings = <&kp unshifted>, <&kp shifted>; \
