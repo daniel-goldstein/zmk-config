@@ -17,6 +17,7 @@
 #define NUM  1
 #define EXT  2
 #define SYM  3
+/* #define FN   4 */
 
 
 #define SHIFTED_BEHAVIOR(name, unshifted, shifted) \
@@ -97,6 +98,14 @@
         };
     };
 
+    /* conditional_layers { */
+    /*     compatible = "zmk,conditional-layers"; */
+    /*     tri_layer { */
+    /*         if-layers = <EXT SYM>; */
+    /*         then-layers = <FN>; */
+    /*     }; */
+    /* }; */
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -105,7 +114,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
              &kp X      &kp W      &kp M      &kp G      &kp J         &hashAt    &dotCol   &slashStar &dquotBang  &squotHuh
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-             &kp S      &kp C      &kp N   &mt LSHIFT T  &kp K        &cmmaSemi &mt RSHIFT A   &kp E     &kp I      &kp H
+             &kp S      &kp C   &mt LCTRL N &mt LSHIFT T  &kp K       &cmmaSemi &mt RSHIFT A &mt RCTRL E &kp I      &kp H
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp B      &kp P      &kp L      &kp D      &kp V         &minPlus    &kp U       &kp O     &kp Y      &kp F
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
