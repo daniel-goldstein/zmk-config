@@ -10,8 +10,12 @@
 
 #include "./keypos_34keys.h"
 
+#define XXX &none
+#define ___ &trans
+
 #define BASE 0
 #define HD   1
+#define SYM  2
 
 
 #define SHIFTED_BEHAVIOR(name, unshifted, shifted) \
@@ -94,10 +98,29 @@
 
         hands_down_layer {
         bindings = <
-            &kp X  &kp W  &kp M  &kp G        &kp J       &hashAt    &dotCol      &slashStar &quotBang &squotHuh
-            &kp S  &kp C  &kp N  &mt LSHIFT T &kp K       &cmmaSemi  &mt RSHIFT A &kp E      &kp I     &kp H
-            &kp B  &kp P  &kp L  &kp D        &kp V       &minPlus   &kp U        &kp O      &kp Y     &kp F
-                                 &to BASE     &kp R       &kp SPC    &kp RET
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+             &kp X      &kp W      &kp M      &kp G      &kp J         &hashAt    &dotCol   &slashStar &quotBang  &squotHuh
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+             &kp S      &kp C      &kp N   &mt LSHIFT T  &kp K        &cmmaSemi &mt RSHIFT A   &kp E     &kp I      &kp H
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+             &kp B      &kp P      &kp L      &kp D      &kp V         &minPlus    &kp U       &kp O     &kp Y      &kp F
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &to BASE    &kp R        &lt SYM SPC  &kp RET
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        >;
+        };
+
+        symbol_layer {
+        bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+            &kp GRAVE   &kp LT     &kp GT    &kp CARET    XXX          &kp AMPS   &kp DLLR   &kp LBKT   &kp RBKT   &kp PRCNT
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+            &kp EXCL  &kp MINUS   &kp PLUS   &kp EQUAL  &kp HASH       &kp PIPE   &kp COLON  &kp LPAR   &kp RPAR   &kp QMARK
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+            &kp BSLH   &kp FSLH   &kp STAR   &kp UNDER    XXX          &kp TILDE  &kp SEMI   &kp LBRC   &kp RBRC    &kp AT
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                                ___        ___            ___        ___
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
     };
