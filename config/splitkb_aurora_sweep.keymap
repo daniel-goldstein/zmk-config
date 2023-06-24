@@ -99,7 +99,7 @@
         hands_down_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-             &kp X      &kp W      &kp M      &kp G      &kp J         &hashAt    &dotCol   &slashStar &quotBang  &squotHuh
+             &kp X      &kp W      &kp M      &kp G      &kp J         &hashAt    &dotCol   &slashStar &dquotBang  &squotHuh
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp S      &kp C      &kp N   &mt LSHIFT T  &kp K        &cmmaSemi &mt RSHIFT A   &kp E     &kp I      &kp H
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
