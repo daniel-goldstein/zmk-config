@@ -15,7 +15,8 @@
 
 #define BASE 0
 #define HD   1
-#define SYM  2
+#define EXT  2
+#define SYM  3
 
 
 #define SHIFTED_BEHAVIOR(name, unshifted, shifted) \
@@ -47,10 +48,22 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_z {
             timeout-ms = <50>;
             key-positions = <LT4 LT3>;
-            bindings = <&kp ESC>;
+            bindings = <&kp Z>;
+        };
+
+        combo_q {
+            timeout-ms = <50>;
+            key-positions = <LT4 LT2>;
+            bindings = <&kp Q>;
+        };
+
+        combo_bspc {
+            timeout-ms = <50>;
+            key-positions = <RM4 RM3>;
+            bindings = <&kp BSPC>;
         };
 
         combo_tab {
@@ -82,6 +95,12 @@
             key-positions = <RM2 RM3>;
             bindings = <&kp RGUI>;
         };
+
+        combo_rgui {
+            timeout-ms = <50>;
+            key-positions = <RM2 RM3>;
+            bindings = <&kp RGUI>;
+        };
     };
 
     keymap {
@@ -105,7 +124,21 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp B      &kp P      &kp L      &kp D      &kp V         &minPlus    &kp U       &kp O     &kp Y      &kp F
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &to BASE    &kp R        &lt SYM SPC  &kp RET
+                                             &to BASE    &kp R        &lt SYM SPC  &kp ESC
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        >;
+        };
+
+        ext_layer {
+        bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+            XXX        XXX       &kp LS(TAB)   XXX        XXX          &kp PG_UP  &kp HOME    &kp UP    &kp END      XXX
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+            &kp LCTRL  &kp LALT   &kp LCMD   &kp LSHFT    XXX          &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp DEL
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)    XXX            XXX      &kp BSPC   &kp TAB      XXX        XXX
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                               ___        ___        &lt SYM RET &kp K_CANCEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
