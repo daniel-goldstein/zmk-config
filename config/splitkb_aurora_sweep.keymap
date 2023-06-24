@@ -17,7 +17,7 @@
 #define SHIFTED_BEHAVIOR(name, unshifted, shifted) \
         name: name { \
             compatible = "zmk,behavior-mod-morph"; \
-            label = name; \
+            label = #name; \
             #binding-cells = <0>; \
             bindings = <&kp unshifted>, <&kp shifted>; \
             mods = <(MOD_LSFT|MOD_RSFT)>; \
