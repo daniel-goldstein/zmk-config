@@ -95,12 +95,6 @@
             key-positions = <RM2 RM3>;
             bindings = <&kp RGUI>;
         };
-
-        combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <RM2 RM3>;
-            bindings = <&kp RGUI>;
-        };
     };
 
     keymap {
