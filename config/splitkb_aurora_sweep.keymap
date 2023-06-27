@@ -72,30 +72,6 @@
             key-positions = <LM4 LM3>;
             bindings = <&kp TAB>;
         };
-
-        combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <RM1 RM2>;
-            bindings = <&kp RALT>;
-        };
-
-        combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <LM3 LM2>;
-            bindings = <&kp LALT>;
-        };
-
-        combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <LM2 LM1>;
-            bindings = <&kp LGUI>;
-        };
-
-        combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <RM2 RM3>;
-            bindings = <&kp RGUI>;
-        };
     };
 
     /* conditional_layers { */
@@ -114,7 +90,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
              &kp X      &kp W      &kp M      &kp G      &kp J         &hashAt    &dotCol   &slashStar &dquotBang  &squotHuh
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-             &kp S      &kp C   &mt LCTRL N &mt LSHIFT T  &kp K       &cmmaSemi &mt RSHIFT A &mt RCTRL E &kp I      &kp H
+          &mt LALT S  &mt LGUI C &mt LCTRL N &mt LSHIFT T &kp K       &cmmaSemi &mt RSHIFT A &mt RCTRL E &mt RGUI I &mt RALT H
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp B      &kp P      &kp L      &kp D      &kp V         &minPlus    &kp U       &kp O     &kp Y      &kp F
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
