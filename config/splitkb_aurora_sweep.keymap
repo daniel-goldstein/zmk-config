@@ -13,10 +13,11 @@
 #define XXX &none
 #define ___ &trans
 
-#define HD   0
-#define NUM  1
-#define EXT  2
-#define SYM  3
+#define QWERTY 0
+#define HD   1
+#define NUM  2
+#define EXT  3
+#define SYM  4
 /* #define FN   4 */
 
 
@@ -84,6 +85,20 @@
 
     keymap {
         compatible = "zmk,keymap";
+
+        query_layer {
+        bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y       &kp U     &kp I      &kp O      &kp P
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+          &mt LALT A  &mt LGUI S &mt LCTRL D &mt LSHIFT F &kp G         &kp H  &mt RSHIFT J &mt RCTRL K &mt RGUI L  &kp BSPC
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+             &lt HD Z   &kp X      &kp C      &kp V      &kp B          &kp N    &kp M         ___        ___      &lt HD ESC
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &mo NUM   &lt EXT R     &lt SYM SPC  &kp ESC
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        >;
+        };
 
         hands_down_layer {
         bindings = <
