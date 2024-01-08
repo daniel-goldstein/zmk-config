@@ -61,18 +61,6 @@
             key-positions = <LT4 LT2>;
             bindings = <&kp Q>;
         };
-
-        combo_bspc {
-            timeout-ms = <50>;
-            key-positions = <RM4 RM3>;
-            bindings = <&kp BSPC>;
-        };
-
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <LM4 LM3>;
-            bindings = <&kp TAB>;
-        };
     };
 
     /* conditional_layers { */
@@ -91,7 +79,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
              &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y       &kp U     &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-          &mt LALT A  &mt LGUI S &mt LCTRL D &mt LSHIFT F &kp G         &kp H  &mt RSHIFT J &mt RCTRL K &mt RGUI L  &kp BSPC
+             &kp A   &mt LGUI S &mt LCTRL D &mt LSHIFT F &kp G          &kp H  &mt RSHIFT J &mt RCTRL K &mt RGUI L  &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &lt HD Z   &kp X      &kp C      &kp V      &kp B          &kp N    &kp M         ___        ___      &lt HD ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
@@ -105,7 +93,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
              &kp X      &kp W      &kp M      &kp G      &kp J         &hashAt    &dotCol   &slashStar &dquotBang  &squotHuh
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-          &mt LALT S  &mt LGUI C &mt LCTRL N &mt LSHIFT T &kp K       &cmmaSemi &mt RSHIFT A &mt RCTRL E &mt RGUI I &mt RALT H
+             &kp S   &mt LGUI C &mt LCTRL N &mt LSHIFT T &kp K       &cmmaSemi &mt RSHIFT A &mt RCTRL E &mt RGUI I &mt RALT H
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp B      &kp P      &kp L      &kp D      &kp V         &minPlus    &kp U       &kp O     &kp Y      &kp F
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
@@ -119,7 +107,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
               XXX        XXX        XXX        XXX        XXX          &kp EQUAL   &kp N7     &kp N8     &kp N9      XXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LCTRL  &kp LALT   &kp LCMD   &kp LSHFT    XXX          &kp STAR    &kp N4     &kp N5     &kp N6    &kp PLUS
+              XXX      &kp LGUI   &kp LCTRL  &kp LSHFT    XXX          &kp STAR    &kp N4     &kp N5     &kp N6    &kp PLUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
               XXX        XXX      &kp TAB    &kp BSPC     XXX          &kp FSLH    &kp N1     &kp N2     &kp N3    &kp MINUS
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
@@ -131,9 +119,9 @@
         ext_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-            XXX        XXX       &kp LS(TAB)   XXX        XXX          &kp PG_UP  &kp HOME    &kp UP    &kp END      XXX
+              XXX        XXX     &kp LS(TAB)   XXX        XXX          &kp PG_UP  &kp HOME    &kp UP    &kp END      XXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LCTRL  &kp LALT   &kp LCMD   &kp LSHFT    XXX          &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp DEL
+              XXX      &kp LGUI   &kp LCTRL  &kp LSHFT    XXX          &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)    XXX            XXX      &kp BSPC   &kp TAB      XXX        XXX
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
