@@ -69,6 +69,18 @@
             key-positions = <LT4 LT2>;
             bindings = <&kp Q>;
         };
+
+        combo_reset {
+            timeout-ms = <50>;
+            key-positions = <LT4 LM4 LB4>;
+            bindings = <&sys_reset>;
+        };
+
+        combo_bootloader {
+            timeout-ms = <50>;
+            key-positions = <RT4 RM4 RB4>;
+            bindings = <&bootloader>;
+        };
     };
 
     keymap {
@@ -119,7 +131,7 @@
         ext_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-           &sys_reset &bootloader &kp LS(TAB)   XXX        XXX          &kp PG_UP  &kp HOME    &kp UP    &kp END      XXX
+               XXX        XXX    &kp LS(TAB)   XXX        XXX          &kp PG_UP  &kp HOME    &kp UP    &kp END      XXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
               XXX      &kp LGUI   &kp LCTRL  &kp LSHFT    XXX          &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
