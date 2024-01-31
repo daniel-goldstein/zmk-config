@@ -119,7 +119,7 @@
         ext_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-              XXX        XXX     &kp LS(TAB)   XXX        XXX          &kp PG_UP  &kp HOME    &kp UP    &kp END      XXX
+           &sys_reset &bootloader &kp LS(TAB)   XXX        XXX          &kp PG_UP  &kp HOME    &kp UP    &kp END      XXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
               XXX      &kp LGUI   &kp LCTRL  &kp LSHFT    XXX          &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
