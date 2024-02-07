@@ -70,22 +70,28 @@
             bindings = <&kp Q>;
         };
 
-        combo_reset {
-            timeout-ms = <50>;
-            key-positions = <LT3 LM3 LB3>;
-            bindings = <&sys_reset>;
-        };
-
         combo_bootloader_left {
             timeout-ms = <50>;
-            key-positions = <LT4 LM4 LB4>;
+            key-positions = <LT3 LM3 LB3>;
             bindings = <&bootloader>;
         };
 
         combo_bootloader_right {
             timeout-ms = <50>;
-            key-positions = <RT4 RM4 RB4>;
+            key-positions = <RT3 RM3 RB3>;
             bindings = <&bootloader>;
+        };
+
+        combo_reset_left {
+            timeout-ms = <50>;
+            key-positions = <LT4 LM4 LB4>;
+            bindings = <&sys_reset>;
+        };
+
+        combo_reset_right {
+            timeout-ms = <50>;
+            key-positions = <RT4 RM4 RB4>;
+            bindings = <&sys_reset>;
         };
     };
 
