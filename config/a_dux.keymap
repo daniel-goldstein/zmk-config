@@ -58,6 +58,9 @@
             #binding-cells = <2>;
             label = "LAYER_TAP_CAPS_WORD";
             bindings = <&mo>, <&caps_word>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
         };
     };
 
