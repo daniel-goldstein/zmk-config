@@ -52,6 +52,13 @@
 
         HOME_ROW_MOD(hml, KEYS_R THUMBS)
         HOME_ROW_MOD(hmr, KEYS_L THUMBS)
+
+        lt_cw: layer_tap_caps_word {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            label = "LAYER_TAP_CAPS_WORD";
+            bindings = <&mo>, <&caps_word>;
+        };
     };
 
     combos {
@@ -105,7 +112,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M     &kp DOT    &kp CMMA    &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                      &lt NUM ESC     &lt EXT R     &lt SYM SPC  &tog DV
+                                          &lt NUM 0   &lt_cw EXT 0    &lt SYM SPC  &tog DV
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
@@ -119,7 +126,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp Q      &kp K      &kp X      &kp B     &quotDquot     &semiCol    &kp M       &kp W     &kp V      &kp Z
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt NUM ESC  &lt EXT R    &lt SYM SPC   ___
+                                           &lt NUM 0   &lt_cw EXT 0   &lt SYM SPC   ___
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
