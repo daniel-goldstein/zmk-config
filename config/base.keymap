@@ -56,4 +56,4 @@
     UC_MODMORPH(name, &name ## _lower, &name ## _upper)
 
 
-ZMK_UNICODE_PAIR(mu, N0, N3, B, C)
+ZMK_UNICODE_SINGLE(mu, N0, N3, B, C)
