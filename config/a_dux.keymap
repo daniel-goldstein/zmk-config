@@ -15,7 +15,7 @@
 #define ___ &trans
 
 #define QWERTY 0
-#define DV   1
+#define CM   1
 #define NUM  2
 #define EXT  3
 #define SYM  4
@@ -115,19 +115,19 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M     &kp DOT    &kp CMMA    &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                          &lt NUM 0   &lt_cw EXT 0    &lt SYM SPC  &tog DV
+                                          &lt NUM 0   &lt_cw EXT 0    &lt SYM SPC  &tog CM
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
 
-        dvorak_layer {
+        colemak_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-             &kp P      &kp Y      &kp F      &kp G      &dotGt         &cmmaLt    &kp C      &kp R      &kp L      &kp J
+             &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y     &semiCol
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-             &kp A   &hml LGUI O &hml LCTRL E &hml LSHIFT U &kp I      &kp D  &hmr RSHIFT H &hmr RCTRL T &hmr RGUI N &kp S
+             &kp A   &hml LGUI R &hml LCTRL S &hml LSHIFT T &kp D      &kp H  &hmr RSHIFT N &hmr RCTRL E &hmr RGUI I &kp O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-             &kp Q      &kp K      &kp X      &kp B     &quotDquot     &semiCol    &kp M       &kp W     &kp V      &kp Z
+             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M       ___        ___        ___
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &lt NUM 0   &lt_cw EXT 0   &lt SYM SPC   ___
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
