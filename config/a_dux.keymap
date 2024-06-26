@@ -123,9 +123,9 @@
         colemak_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-             &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y     &kp DQT
+             &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y     &kp O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-             &kp A   &hml LGUI R &hml LCTRL S &hml LSHIFT T &kp D      &kp H  &hmr RSHIFT N &hmr RCTRL E &hmr RGUI I &kp O
+             &kp A   &hml LGUI R &hml LCTRL S &hml LSHIFT T &kp D      &kp H  &hmr RSHIFT N &hmr RCTRL E &hmr RGUI I &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M       ___        ___        ___
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
@@ -151,11 +151,11 @@
         ext_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-               XXX        XXX    &kp LS(TAB)   XXX       &kp SQT       &kp PG_UP  &kp HOME    &kp UP    &kp END      XXX
+               XXX        XXX    &kp LS(TAB)   XXX        XXX          &kp PG_UP  &kp HOME    &kp UP    &kp END      XXX
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
               XXX      &kp LGUI   &kp LCTRL  &kp LSHFT    XXX          &kp PG_DN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp EXCL         XXX      &kp BSPC   &kp TAB      XXX        XXX
+            &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)    XXX            XXX      &kp BSPC   &kp TAB      XXX        XXX
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                                ___        ___        &lt SYM RET &kp K_CANCEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -165,11 +165,11 @@
         symbol_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-            &kp GRAVE   &kp LT     &kp GT    &kp CARET    XXX          &kp AMPS   &kp DLLR   &kp LBKT   &kp RBKT   &kp PRCNT
+            &kp GRAVE   &kp LT     &kp GT    &kp CARET  &kp SQT        &kp AMPS   &kp DLLR   &kp LBKT   &kp RBKT   &kp PRCNT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp EXCL  &kp MINUS   &kp PLUS   &kp EQUAL  &kp HASH       &kp PIPE   &kp COLON  &kp LPAR   &kp RPAR   &kp QMARK
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &kp BSLH   &kp FSLH   &kp STAR   &kp UNDER    XXX          &kp TILDE  &kp SEMI   &kp LBRC   &kp RBRC    &kp AT
+            &kp BSLH   &kp FSLH   &kp STAR   &kp UNDER  &kp DQT        &kp TILDE  &kp SEMI   &kp LBRC   &kp RBRC    &kp AT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                                 ___        ___            ___        ___
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
