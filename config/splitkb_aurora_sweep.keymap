@@ -55,6 +55,26 @@
 
         HOME_ROW_MOD(hml, KEYS_R THUMBS)
         HOME_ROW_MOD(hmr, KEYS_L THUMBS)
+
+        lt_cw: layer_tap_caps_word {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            label = "LAYER_TAP_CAPS_WORD";
+            bindings = <&mo>, <&caps_word>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
+        };
+
+        lt_sk: layer_tap_sticky_key {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            label = "LAYER_TAP_STICKY_KEY";
+            bindings = <&mo>, <&sk>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <50>;
+        };
     };
 
     combos {
@@ -122,7 +142,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp B      &kp P      &kp L      &kp D      &kp V         &minPlus    &kp U       &kp O     &kp Y      &kp F
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt NUM ESC &lt EXT R     &lt SYM SPC   ___
+                                       &lt_sk NUM LSHIFT &lt EXT R     &lt SYM SPC   ___
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
