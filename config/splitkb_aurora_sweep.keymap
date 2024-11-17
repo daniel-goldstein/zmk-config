@@ -15,7 +15,8 @@
 #define ___ &trans
 
 #define QWERTY 0
-#define HD   1
+// #define HD   1
+#define COL  1
 #define NUM  2
 #define EXT  3
 #define SYM  4
@@ -128,24 +129,38 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M       XXX        XXX       &kp ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                      &lt_sk NUM LSHIFT EXT R     &lt SYM SPC  &tog HD
+                                      &lt_sk NUM LSHIFT EXT R     &lt SYM SPC  &tog COL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
 
-        hands_down_layer {
+        colemak_layer {
         bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-             &kp X      &kp W      &kp M      &kp G      &kp J         &hashAt    &dotCol   &slashStar &dquotBang  &squotHuh
+             &kp Q      &kp W      &kp F      &kp P      &kp G          &kp J      &kp L      &kp U      &kp Y     &kp DQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-             &kp S   &hml LGUI C &hml LCTRL N &hml LSHIFT T &kp K     &cmmaSemi &hmr RSHIFT A &hmr RCTRL E &hmr RGUI I &kp H
+             &kp A   &hml LGUI R &hml LCTRL S &hml LSHIFT T &kp D      &kp H  &hmr RSHIFT N &hmr RCTRL E &hmr RGUI I &kp O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-             &kp B      &kp P      &kp L      &kp D      &kp V         &minPlus    &kp U       &kp O     &kp Y      &kp F
+             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp K      &kp M     &kp CMMA   &kp DOT    &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                       &lt_sk NUM LSHIFT &lt EXT R     &lt SYM SPC   ___
+                                  &lt_sk NUM LSHIFT   &lt_cw EXT 0   &lt SYM SPC    ___
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
         >;
         };
+
+        // hands_down_layer {
+        // bindings = <
+        // //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //      &kp X      &kp W      &kp M      &kp G      &kp J         &hashAt    &dotCol   &slashStar &dquotBang  &squotHuh
+        // //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //      &kp S   &hml LGUI C &hml LCTRL N &hml LSHIFT T &kp K     &cmmaSemi &hmr RSHIFT A &hmr RCTRL E &hmr RGUI I &kp H
+        // //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //      &kp B      &kp P      &kp L      &kp D      &kp V         &minPlus    &kp U       &kp O     &kp Y      &kp F
+        // //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+        //                                &lt_sk NUM LSHIFT &lt EXT R     &lt SYM SPC   ___
+        // //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+        // >;
+        // };
 
         num_layer {
         bindings = <
