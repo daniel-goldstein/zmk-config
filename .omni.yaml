@@ -1,0 +1,4 @@
+up:
+  - go: auto
+  - go-install:
+    - github.com/mrmarble/zmk-viewer/cmd/zmk-viewer
